@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
     <title>CryptoDecrypto</title>
+    <link rel="stylesheet" href="../asset/main.css">
+    <script src="app.js"></script>
 </head>
+
 <body>
-    <form>
-        <label for="message">Entrez votre message à crypter/décrypter:</label><br>
-        <input type="text" name="message" id="message" required><br>
-        <label for="cle">Entrez votre clé de cryptage/décryptage:</label><br>
-        <input type="text" name="cle" id="cle" required><br>
-        <input type="submit" onclick="crypting()" value="Crypter">
-        <input type="submit" onclick="decrypting()" value="Decrypter">
-    </form>
-    <p id="result"></p>
+    <main>
+        <section class="form-section">
+            <div class="form-wrapper">
+                <form>
+                    <div class="field-wrapper">
+                        <label for="message">Message :</label>
+                        <br />
+                        <input type="text" name="message" id="message" required
+                            placeholder="Entrez votre message à crypter/décrypter">
+                    </div>
+                    <div class="field-wrapper">
+                        <label for="cle">Clé de décryptage:</label>
+                        <br />
+                        <input type="text" name="cle" id="cle" required
+                            placeholder="Entrez votre clé de cryptage/décryptage">
+                    </div>
+                    <div class="buttons-wrapper">
+                        <input type="submit" onclick="crypting()" value="Crypter">
+                        <input type="submit" onclick="decrypting()" value="Decrypter">
+                    </div>
+                </form>
+            </div>
+            <div class="result-wrapper">
+                <p>Résultat :</p>
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>

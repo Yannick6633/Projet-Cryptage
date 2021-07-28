@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+
+.form-section {
+    display: flex;
+    padding: 1em
+}
+
+.form-section > div {
+    width: 500px;
+}
+
