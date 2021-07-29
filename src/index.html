@@ -24,13 +24,13 @@
                     <form class="formcontainer">
                         <div class="mb-3">
                             <label for="inputMessage" class="form-label">Message :</label>
-                            <textarea type="message" class="form-control"
+                            <textarea type="message" id="message" class="form-control"
                                 placeholder="Entrez votre message à crypter/décrypter"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="inputEncryptionKey" class="form-label">Clé de décryptage :</label>
-                            <input type="password" class="form-control"
+                            <input type="password" id="cle" lass="form-control"
                                 placeholder="Entrez votre clé de cryptage/décryptage">
                         </div>
 
@@ -39,13 +39,14 @@
 
                     </form>
 
-                    <section class="containerresult">
-                        <div class="mb-3">
-                            <label for="encryptionkey" class="form-label">Résultat :</label>
-                            <textarea type="text" id="result" class="form-control"
-                                id="exampleInputPassword1"></textarea>
-                        </div>
-                    </section>
+                   
+                </section>
+                <section class="containerresult">
+                    <div class="mb-3">
+                        <p>Résultat :</p>
+                        <p id="result" 
+                        ></p>
+                    </div>
                 </section>
             </section>
 
