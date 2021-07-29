@@ -1,3 +1,20 @@
+.formcontainer {
+
+    position: absolute;
+    top: 15vh;
+    background: (0,0,0,.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.containerresult {
+
+    bottom: 30vh;
+    position: absolute;
+ 
+}
+
 * {
     margin: 0;
     padding: 0;
