@@ -1,3 +1,4 @@
+// Crypting / Decrypting
 function crypting() {
   let message = document.getElementById("message").value;
   let passphrase = document.getElementById("key").value;
@@ -126,3 +127,13 @@ function setTheme(mode) {
     localStorage.setItem("theme", mode);
   }
 }
+
+// Send email
+let emailInput = document.getElementById('email');
+let sendButton = document.getElementById('send-email');
+emailInput.addEventListener('keyup', event => {
+  const mailto = 'mailto:' + emailInput.value;
+  const subject = '?subject="Nouveau message CryptoDecrypto"';
+  const body = '&body="'+document.getElementById('result').textContent+'"';
+  sendButton.setAttribute('href', mailto+subject+body);
+});
