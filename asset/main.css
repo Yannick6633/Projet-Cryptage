@@ -69,10 +69,6 @@ body * {
         margin-bottom: 0.5em;
     }
 
-    .encrypt-form {
-        top: 30vh;
-    }
-
     .form-wrapper,
     .result-wrapper {
         height: 100%;
