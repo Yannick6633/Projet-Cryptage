@@ -33,6 +33,17 @@
                                     <input type="password" id="key" class="form-control"
                                         placeholder="Entrez votre clé de cryptage/décryptage." />
                                 </div>
+                                <div class="mb-3">
+                                    <span>Type d'encryption: </span>
+                                    <input type="radio" id="aes" lass="form-control" name="encryption-type" value="aes" checked>
+                                    <label for="aes" class="form-label" style="padding-right: 9px;">AES</label>
+                                    <input type="radio" id="des" lass="form-control" name="encryption-type" value="des">
+                                    <label for="des" class="form-label" style="padding-right: 9x;">Triple DES</label>
+                                    <input type="radio" id="rabbit" lass="form-control" name="encryption-type" value="rabbit">
+                                    <label for="rabbit" class="form-label" style="padding-right: 9px;">Rabbit</label>
+                                    <input type="radio" id="rc4" lass="form-control" name="encryption-type" value="rc4">
+                                    <label for="rc4" class="form-label">RC4Drop</label>
+                                </div>
 
                                 <div class="d-flex justify-content-end">
                                     <button type="button" onclick="crypting()"
