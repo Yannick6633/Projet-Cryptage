@@ -16,4 +16,4 @@ function decrypting(){
         document.getElementById('result').innerHTML = plaintext;
 
     }
-}
+}z
