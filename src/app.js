@@ -88,7 +88,7 @@ function getEncryptionType() {
   return null;
 }
 
-// Theme colors
+// Theme colors 
 
 let theme = localStorage.getItem("theme");
 
@@ -129,9 +129,12 @@ function setTheme(mode) {
 }
 
 // Send email
+
 let emailInput = document.getElementById('email');
 let sendButton = document.getElementById('send-email');
+
 emailInput.addEventListener('keyup', event => {
+
   const mailto = 'mailto:' + emailInput.value;
   const subject = '?subject="Nouveau message CryptoDecrypto"';
   const body = '&body="'+document.getElementById('result').textContent+'"';
