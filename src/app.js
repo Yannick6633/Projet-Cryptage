@@ -131,7 +131,7 @@ function setTheme(mode) {
 // Send email
 
 let emailInput = document.getElementById('email');
-let sendButton = document.getElementById('send-email');
+let sendButton = document.getElementById('submit-btn');
 
 emailInput.addEventListener('keyup', event => {
 
