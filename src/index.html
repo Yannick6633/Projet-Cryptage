@@ -10,46 +10,60 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../asset/main.css">
 
+    <link rel="stylesheet" href="../asset/main.css">
 </head>
 
 <body>
-    <main>
+    <main class="main">
+        <section class="container-fluid encrypt-section">
+            <div class="container">
+                <div class="row">
+                    <div class="form-col col-md-6 col-sm-12">
+                        <form id="encrypt-form">
+                            <div class="form-wrapper">
+                                <div class="mb-3">
+                                    <label for="message" class="form-label mb-0">Message :</label>
+                                    <textarea type="message" id="message" class="form-control"
+                                        placeholder="Entrez votre message à crypter/décrypter."></textarea>
+                                </div>
 
-        <section class="container-fluid">
-            <section class="row justify-content-center">
+                                <div class="mb-3">
+                                    <label for="key" class="form-label mb-0">Clé de décryptage :</label>
+                                    <input type="password" id="key" class="form-control"
+                                        placeholder="Entrez votre clé de cryptage/décryptage." />
+                                </div>
 
-                <section class="col-12 col-sm-6 col-md-3">
-                    <form class="formcontainer">
-                        <div class="mb-3">
-                            <label for="inputMessage" class="form-label">Message :</label>
-                            <textarea type="message" id="message" class="form-control"
-                                placeholder="Entrez votre message à crypter/décrypter"></textarea>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="inputEncryptionKey" class="form-label">Clé de décryptage :</label>
-                            <input type="password" id="cle" lass="form-control"
-                                placeholder="Entrez votre clé de cryptage/décryptage">
-                        </div>
-
-                        <button type="button" onclick="crypting()" class="btn btn-primary">Crypter</button>
-                        <button type="button" onclick="decrypting()" class="btn btn-primary">Decrypter</button>
-
-                    </form>
-
-                   
-                </section>
-                <section class="containerresult">
-                    <div class="mb-3">
-                        <p>Résultat :</p>
-                        <p id="result" 
-                        ></p>
+                                <div class="d-flex justify-content-end">
+                                    <button type="button" onclick="crypting()"
+                                        class="btn btn-primary mx-3">Crypter</button>
+                                    <button type="button" onclick="decrypting()"
+                                        class="btn btn-primary">Décrypter</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </section>
-            </section>
 
+                    <div class="result-col col-md-6 col-sm-12">
+                        <div class="result-wrapper">
+                            <div class="mb-3">
+                                <p class="mb-0">Résultat :</p>
+                                <p id="result" class="mb-0"></p>
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="email" class="form-label mb-0">Email</label> <br/>
+                                <input type="email" class="form-control" placeholder="Adresse e-mail du destinataire.">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <p class="mb-0">
+                                    <a onclick="sendByEmail()" href="mailto:example@email.com" class="btn btn-primary">Envoyer</a>
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
