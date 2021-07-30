@@ -55,7 +55,7 @@ h1 {
     min-height: 10em;
 }
 
-#submit-btn {
+.submit-btn, #submit-btn {
     
     color: #fff;
     background-color: var(--btnColor);

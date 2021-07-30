@@ -133,7 +133,7 @@ function setTheme(mode) {
 let emailInput = document.getElementById('email');
 let sendButton = document.getElementById('submit-btn');
 
-emailInput.addEventListener('keyup', event => {
+emailInput.addEventListener('input', event => {
 
   const mailto = 'mailto:' + emailInput.value;
   const subject = '?subject="Nouveau message CryptoDecrypto"';
